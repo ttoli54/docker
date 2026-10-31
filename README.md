@@ -1,6 +1,7 @@
 ### Docker 설치 및 실행 실습
 
 1. Docker 설치 후 버전확
+- 예시
 ```
 C:\Users\User>docker --version
 Docker version 29.9.2, build a82e528
