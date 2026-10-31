@@ -1,6 +1,6 @@
 ### Docker 설치 및 실행 실습
 
-1. Docker 설치 후 버전확
+1. Docker 설치 후 버전확인
 - 예시
 ```
 C:\Users\User>docker --version
