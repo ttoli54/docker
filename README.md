@@ -1,12 +1,12 @@
 ### Docker 설치 및 실행 실습
 
-1. Docker 설치 후 버전확
+1. Docker 설치 후 버전확인
 - 예시
 ```
 C:\Users\User>docker --version
 Docker version 29.9.2, build a82e528
 ```
-
+2. docker 점검 및 hello-world
 
 ```
 C:\Users\User>docker info
@@ -147,7 +147,7 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
-
+3. Ubuntu 컨테이너 실행
 
 ```
 C:\Users\User>docker run -it ubuntu bash
@@ -177,3 +177,26 @@ PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-poli
 UBUNTU_CODENAME=resolute
 LOGO=ubuntu-logo
 ```
+4. 변경사항이 있는지 파일 추가하기 실습
+```
+ C:\Users\User\Desktop\ttoli54\docker> git add .
+PS C:\Users\User\Desktop\ttoli54\docker> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+```
+5.docker 기본 운영 명령 수행
+```
+C:\Users\User\Desktop\ttoli54\docker> docker images
+                                                                                                                                     i Info →   U  In Use
+IMAGE                ID             DISK USAGE   CONTENT SIZE   EXTRA
+hello-world:latest   c567b231f656       25.9kB         9.49kB    U   
+ubuntu:latest        6a06111c3b0a        163MB         45.9MB    U   
+PS C:\Users\User\Desktop\ttoli54\docker> docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED       STATUS       PORTS     NAMES
+48701143dfea   ubuntu    "bash"    3 hours ago   Up 3 hours             serene_jepsen
+PS C:\Users\User\Desktop\ttoli54\docker> docker ps -a
+CONTAINER ID   IMAGE         COMMAND    CREATED       STATUS                   PORTS     NAMES
+CONTAINER ID   NAME            CPU %     MEM USAGE / LIMIT    MEM %     NET I/O        BLOCK I/O   PIDS
+48701143dfea   serene_jepsen   0.00%     1.77MiB / 1.916GiB   0.09%     1.7kB / 126B   0B / 0B     1
